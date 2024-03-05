@@ -109,8 +109,7 @@ def fdr(p_vals):
 # calculate the tumor size using 3 measurements for each sgRNA
 def Cal_Tumor_Size_simple(x,input_percentile):
     d = {}
-    #temp_vect = x['Cell_number']
-    temp_vect = x['Cell_number_0.6']
+    temp_vect = x['Cell_number']
     if type (temp_vect) == 'int':
         temp_vect = [temp_vect]
     # measure size
